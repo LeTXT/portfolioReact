@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, p {
+  color: #424242;
+
+  font-family: 'Open Sans', sans-serif;
+
+  margin: 0;
+}
+h1 {
+  font-size: 64px;
+  margin-top: 5px;
+}
+h2 {
+  font-size: 36px;
+}
+
+.flex {
+  display: flex;
+}
+.indexBody {
+  width: 100%;
+}
+/* header style */
+.headerBody {
+  height: 70px;
+}
+
+/* hero style */
+.heroBody {
+  width: 100%;
+  height: 592px;
+
+  background-color: white;
+
+  position: -webkit-sticky;
+  position: sticky;
+
+  top: -1px;
+  
+
+  display: grid;
+
+  justify-content: center;
+
+  text-align: center;
+
+  
+}
+.heroBody h1 {
+  margin-top: 50px;
+}
+.heroBody p {
+  margin-top: 0;
+
+  font-size: 24px;
+}
+.heroBody img {
+  width: 100px;
+
+  margin: auto;
+}
+.circle {
+  width: 70px;
+  height: 70px;
+
+  border: solid 1px #424242;
+  border-radius: 50px;
+
+  margin: auto;
+  margin-top: 70px;
+}
+.circle img {
+  width: 30px;
+
+  margin-top: 25%
+  /* animation: arrowDown 2s infinite; */
+}
+
+@keyframes arrowDown {
+  0% {
+    margin-top: 25%;
+  } 50% {
+    margin-top: 30%;
+  } 100% {
+    margin-top: 25%;
+  }
+}
+
+.red {
+  height: 80px;
+
+  background-color: #FF4747;
+}
+
+/* aboutMe Style */
+.aboutMeBody {
+  width: 100%;
+  max-width: 1000px;
+
+  display: grid;
+
+
+  margin: auto;
+  margin-top: 20px;
+
+  margin-bottom: 60px;
+
+}
+.aboutMeBody h2 {
+  width: 100%;
+
+  margin-left: 30px;
+}
+.flexAboutMe {
+  display: flex;
+  
+  justify-content: space-evenly;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+/* contactMeBody style*/
+.contactMeBody {
+  margin: 60px auto;
+  width: 80%;
+
+  max-width: 700px;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+.hiIAm {
+  width: 40%;
+}
+.activity {
+  
+  display: flex;
+
+  justify-content: space-between;
+
+}
+.activityGrid {
+ margin: auto 0;
+}
+.bodyGrafic {
+  border: solid 1px #424242;
+  height: 10px;
+  width: 100%;
+
+  border-radius: 10px;
+
+  padding: 0;
+}
+.ninetyFive {
+  width: 95%;
+  height: 100%;
+
+  border-radius: 20px 0 0 20px;
+
+  background-color: #FF4747;
+}
+.eighty {
+  width: 80%;
+  height: 100%;
+
+  border-radius: 20px 0 0 20px;
+
+  background-color: #FF4747;
+
+  margin: 0;
+}
+.hoverActivity {
+  margin-bottom: 10px;
+}
+
+.hoverActivity:hover .ninetyFive {
+  animation: sizePercentninetyFive 2s;
+}
+
+.hoverActivity:hover .eighty {
+  animation: sizePercentEighty 2s;
+}
+
+@keyframes sizePercentEighty {
+  0% {
+    width: 80%;
+  } 25% {
+    width: 10%;
+  } 75% {
+    width: 100%;
+  } 100% {
+    width: 80%;
+  }
+}
+
+@keyframes sizePercentninetyFive {
+  0% {
+    width: 95%;
+  } 25% {
+    width: 10%;
+  } 75% {
+    width: 100%;
+  } 100% {
+    width: 95%;
+  }
+}
+
+/* Background color hover style */
+.flex {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.containerBody {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.hoverHere {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 10px;
+
+  cursor: default;
+
+  transition: 0.1s;
+}
+
+.hoverHere:hover {
+  background-color: lightcoral;
+
+  box-shadow: lightcoral 0 0 25px 20px;
+}
+
+@keyframes hover {
+  from {
+    background-color: lightcoral;
+  }
+  to {
+  }
+}
+
+/* occupation style */
+.occupationBody {
+  display: grid;
+
+  max-width: 1000px;
+
+  width: 100%;
+  height: 100%;
+
+  justify-content: space-between;
+
+  margin: auto;
+}
+
+.modal {
+  width: 300px;
+  height: 300px;
+}
+.redOccupation {
+  background-color: #FF4747;
+}
+
+/* portfolio style */
+
+.portfolioBody {
+  max-width: 1000px;
+  width: 100%;
+  height: 200px;
+
+  margin: 30px auto 90px auto;
+  
+}
+.portfolioBody h2 {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.apkPortfolio {
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.apk {
+  margin-top: 30px;
+
+  transition: 1s;
+}
+
+.apk:hover {
+  margin-top: 0;
+
+  transition: 1s;
+}
+
+.apk img {
+  width: 100px;
+}
+
+/* Contact Footer style */
+
+.ContactFooterBody {
+  max-width: 800px;
+  width: 100%;
+
+  margin: 30px auto;
+}
+
+.redFooter {
+  width: 90%;
+
+  margin: auto;
+  padding: 30px 0;
+
+
+  background-color: #FF4747;
+
+  display: grid;
+
+  justify-content: center;
+
+}
+.redFooter p, .redFooter h2 {
+  color: white;
+
+
+
+}
+
+.redFooter p:first-of-type {
+  font-weight: bold;
+}
+
+.gridFooter {
+  width: 100%;
+  display: grid;
+  text-align: center;
+
+  margin: 0 auto;
+  margin-top: 30px;
+
+  justify-content: center;
+}
+.lineContact {
+  height: 3px;
+  background-color: #424242;
+
+  margin: 20px auto;
+
+  width: 50px;
+}
+.socialScreen {
+  margin: 20px;
+
+}
+.ContatctFooterBody h4 {
+  font-size: 14px;
+
+  font-weight: bold;
+}
+.socialScreen img {
+  width: 20px;
+
+}
+
+.gridFooter p {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 520px) {
+  .flexAboutMe {
+    margin: 0 auto;
+  }
+  .width {
+    width: 50%;
+  }
+
+  .contactMeBody {
+    display: grid;
+  }
+  .hiIAm {
+    width: 100%;
+
+    margin-bottom: 30px;
+  }
+}
